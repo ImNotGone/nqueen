@@ -12,4 +12,7 @@ all: $(OBJ)
 $(OBJ): $(SRC)
 	$(CC) $(C_FLAGS) -c $< -o $@
 
-.PHONY: all
+clean:
+	rm -rf $(OBJ) $(BIN)
+
+.PHONY: all clean
